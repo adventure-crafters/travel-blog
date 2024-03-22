@@ -1,0 +1,62 @@
+.travel-blog-hero {
+  min-height: 600px;
+}
+@media screen and (max-width: 480px) {
+  .travel-blog-hero {
+    min-height: 400px;
+  }
+}
+.travel-blog-hero .btn {
+  font-size: 24px;
+}
+.travel-blog-hero .btn.btn-primary {
+  padding: 14px 30px !important;
+}
+
+.travel-blog-hero .main-featured {
+  background-image: url('/images/blog-1.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 48px;
+}
+
+.travel-blog-hero .main-featured-text {
+  color: #ffffff;
+}
+
+.travel-blog-hero .featured {
+  width: 100%;
+  display: table;
+  height: 265px;
+  position: relative;
+}
+.travel-blog-hero .featured:first-child {
+  margin-bottom: 30px;
+}
+.travel-blog-hero .featured .desc {
+  display: table-cell;
+  vertical-align: middle;
+  height: 285px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.travel-blog-hero .featured .desc span {
+  color: rgba(0, 0, 0, 0.5);
+}
+.travel-blog-hero .featured .desc .date {
+  display: block;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .travel-blog-hero .featured .desc {
+    opacity: 1;
+  }
+}
+.travel-blog-hero .featured:hover .desc {
+  opacity: 1;
+}

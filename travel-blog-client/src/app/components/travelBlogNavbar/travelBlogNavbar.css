@@ -1,0 +1,63 @@
+.travel-blog-nav a {
+  padding: 5px 10px;
+  color: #000;
+  font-weight: 600;
+}
+.travel-blog-nav .top-menu {
+  background: #fbf2eb;
+}
+.travel-blog-nav .logo-menu {
+  padding: 2em 0;
+}
+.travel-blog-nav #travel-blog-logo {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 700;
+  font-family: 'Sacramento', cursive;
+  width: 220px;
+  height: 150px;
+  margin: 0 auto;
+  display: table;
+  position: relative;
+}
+.travel-blog-nav #travel-blog-logo:before {
+  position: absolute;
+  top: -10px;
+  bottom: 0;
+  left: -10px;
+  right: 0;
+  width: 220px;
+  height: 150px;
+  background: #fbf2eb;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.travel-blog-nav #travel-blog-logo h1 {
+  font-family: 'Sacramento', cursive !important;
+  font-size: 50px;
+  margin-bottom: 0;
+  width: inherit;
+  width: 150px;
+  height: 150px;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 32px;
+  position: relative;
+  border: 1px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.travel-blog-nav #travel-blog-logo a {
+  font-weight: 400;
+}
+.travel-blog-nav #travel-blog-logo a span {
+  color: #1d2f3b;
+}
+.travel-blog-nav #travel-blog-logo a small {
+  font-size: 12px;
+}
