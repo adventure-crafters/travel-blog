@@ -29,7 +29,7 @@ const articles = [
 ];
 
 const TravelBlogPopularPosts = () => {
-  const Article = ({ article }) => {
+  const Article = ({ article }: { article: any }) => {
     return (
       <div className='col-md-3'>
         <div className='travel-blog'>

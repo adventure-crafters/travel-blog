@@ -62,7 +62,7 @@ const categories = [
   { title: 'Entertainment', url: '/' }
 ];
 
-const Article = ({ article }) => {
+const Article = ({ article }: { article: any }) => {
   return (
     <div className='travel-blog'>
       <div className='title title-pin text-center'>
@@ -88,7 +88,7 @@ const Article = ({ article }) => {
   );
 };
 
-const LatestPosts = ({ article }) => (
+const LatestPosts = ({ article }: { article: any }) => (
   <div className='blog-entry'>
     <a href='#'>
       <Image
@@ -106,7 +106,7 @@ const LatestPosts = ({ article }) => (
   </div>
 );
 
-const Category = ({ category }) => (
+const Category = ({ category }: { category: any }) => (
   <Link href={category.url}>{category.title}</Link>
 );
 
