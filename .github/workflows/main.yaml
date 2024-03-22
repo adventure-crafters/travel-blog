@@ -1,0 +1,22 @@
+name: Node.js CI
+
+on:
+    push:
+      branches:
+        - dev_ovidiu
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '21.7.1'
+      - name: build the app
+        run: |
+            cd travel-blog-client
+            npm run build
