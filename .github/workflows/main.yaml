@@ -24,3 +24,13 @@ jobs:
         run: |
             cd travel-blog-client
             npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: next
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
